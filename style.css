@@ -155,11 +155,7 @@ del {
 	background-color: #F15F22;
 	color: #ffffff !important;
     border: 1px solid #F15F22;
-	text-decoration: none;
-}
-
-.info_guarantee {
-	/*margin-top: 40px;*/
+	text-decoration: none ;
 }
 
 .info_guarantee a {
