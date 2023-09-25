@@ -22,6 +22,8 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
+/* Начальный комментраий */
+
 @font-face {
     font-family: 'Akrobat';
     src: local('Akrobat Thin'), local('Akrobat-Thin'), url('/wp-content/themes/orchid-store/fonts/Akrobatthin.woff2') format('woff2'), url('/wp-content/themes/orchid-store/fonts/Akrobatthin.woff') format('woff'), url('/wp-content/themes/orchid-store/fonts/Akrobatthin.ttf') format('truetype');
