@@ -130,6 +130,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .my_dop_info_container {
 	display: flex;
     margin-bottom: 20px;
+	@media (max-width: 480px) {
+		margin-bottom: 26px;
+		justify-content: center;
+	  };
 }
 
 del {
@@ -189,6 +193,9 @@ del {
 
 .price {
     margin-top: 3px;
+	@media (max-width: 480px) {
+		text-align: center;
+	  };
 }
 
 .price_discount {
@@ -196,34 +203,44 @@ del {
     display: flex;
     flex-direction: column;
     align-items: center;
+	@media (max-width: 480px) {
+		padding-top: 20px;
+	  };
 }
 
 .price_discount p {
-	font-size: 16px;
-	
+	font-size: 20px;
+    font-weight: 600;
+	@media (max-width: 480px) {
+		text-align: center;;
+	  };	
 }
 
 .price_discount a {
-	font-size: 16px;
+	font-size: 20px;
 	text-decoration: underline;
 	color: #f15f22 !important;
+	font-weight: 600;
 }
 
 .price_discount a:hover {
-	font-size: 16px;
-	text-decoration: none;
+	color: #ec9976 !important;
 }
 
 .woocommerce div.product .entry-summary form.cart .button {
     margin-left: 0;
     color: #fff;
     font-size: 22px;
+	font-weight: 600;
     padding: 13px 50px!important;
     background: #F15F22;
     border-radius: 2px;
     text-transform: none;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
+	@media (max-width: 480px) {
+		width: 100%
+	  };
 }
 .popup_ap {
 	cursor: pointer;
