@@ -73,6 +73,51 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     font-style: normal;
 }
 
+/* Блок с кнопками услуг и запчастей */
+
+.servise_order {
+	display: flex;
+    margin-top: 60px;
+}
+
+.to_order {
+	margin: 0 5px 0 0px;
+}
+
+.to_order_buttom {
+	padding: 12px 10px;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #F15F22 !important;
+    border: 1px solid #F15F22;
+}
+
+.to_order_buttom:hover {
+	background-color: #F15F22;
+    color: #ffffff !important;
+    border: 1px solid #F15F22;
+    text-decoration: none;
+}
+
+.to_spares_buttom {
+	padding: 12px 10px;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #F15F22 !important;
+    border: 1px solid #F15F22;
+}
+
+.to_spares_buttom:hover {
+	background-color: #F15F22;
+    color: #ffffff !important;
+    border: 1px solid #F15F22;
+    text-decoration: none;
+}
+
 .term-description {
 	display: none;
 }
@@ -224,7 +269,9 @@ del {
 }
 
 .price_discount a:hover {
-	color: #ec9976 !important;
+	color: #e4a083 !important;
+	text-decoration: none;
+	font-size: 19.9px;
 }
 
 .woocommerce div.product .entry-summary form.cart .button {

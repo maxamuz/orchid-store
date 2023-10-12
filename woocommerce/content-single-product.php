@@ -64,7 +64,14 @@ if ( post_password_required() ) {
 		do_action( 'woocommerce_single_product_summary' );
 		?>
 
-		
+		<div class="servise_order">
+		<div class="to_order">
+			<a href="#" class="to_order_buttom">Заказать обслуживание</a>
+		</div>
+		<div class="to_spares">
+		<a href="#" class="to_spares_buttom">Подобрать запчасти</a>
+		</div>
+		</div>
 	</div>
 
 	<?php

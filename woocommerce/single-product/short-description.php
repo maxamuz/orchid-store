@@ -47,7 +47,7 @@ $short_description = apply_filters( 'woocommerce_short_description', $post->post
 
 <div class="characteristic">
 	<p>
-		<span>Производительность: </span><?php echo $product->get_attribute('proizvoditelnost'); ?> л/мин
+		<span>Производительность: </span><?php echo $product->get_attribute('proizvoditelnost'); ?> куб.м/мин
 	</p>
 </div>
 
