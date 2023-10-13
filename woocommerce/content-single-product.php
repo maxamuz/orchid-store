@@ -65,12 +65,12 @@ if ( post_password_required() ) {
 		?>
 
 		<div class="servise_order">
-		<div class="to_order">
-			<a href="#" class="to_order_buttom">Заказать обслуживание</a>
-		</div>
-		<div class="to_spares">
-		<a href="#" class="to_spares_buttom">Подобрать запчасти</a>
-		</div>
+			<div class="to_order">
+				<a href="#" class="to_order_buttom">Заказать обслуживание</a>
+			</div>
+			<div class="to_spares">
+				<a href="#" class="to_spares_buttom">Подобрать запчасти</a>
+			</div>
 		</div>
 	</div>
 

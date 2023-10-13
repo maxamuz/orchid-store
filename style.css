@@ -78,6 +78,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .servise_order {
 	display: flex;
     margin-top: 60px;
+	@media (max-width: 480px) {
+    justify-content: center;
+	};
 }
 
 .to_order {
@@ -117,6 +120,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     border: 1px solid #F15F22;
     text-decoration: none;
 }
+
+/* Конец блока с кнопками услуг и запчастей */
 
 .term-description {
 	display: none;
