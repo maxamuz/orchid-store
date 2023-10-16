@@ -123,6 +123,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Конец блока с кнопками услуг и запчастей */
 
+
+
+.woocommerce-products-header {
+	z-index: 0;
+}
+
 .term-description {
 	display: none;
 }

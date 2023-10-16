@@ -428,6 +428,8 @@ add_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_rela
 
 add_action( 'woocommerce_after_single_product_summary', 'wp_tag_cloud_single_product', 12);
 
+
+
 function wp_tag_cloud_single_product () {
 	echo '<h2 class="header_wp_tag_cloud">Не подходит модель? Ищите по параметрам!</h2><div class="wp_tag_cloud_single_product">';
 	wp_tag_cloud( [
@@ -447,6 +449,39 @@ function wp_tag_cloud_single_product () {
 		'topic_count_text_callback' => 'default_topic_count_text',
 	] );
 	echo '</div>';
+}
+
+add_action( 'woocommerce_archive_description', 'wp_tag_cloud_categories', 12);
+
+function wp_tag_cloud_categories () {
+	if (!is_product_category('50')){
+	echo '<div class="wp_tag_cloud_single_product">';
+	wp_tag_cloud( [
+		'smallest'  => 12,
+		'largest'   => 12,
+		'unit'      => 'pt',
+		'number'    => 0,
+		'format'    => 'flat',
+		'separator' => " ",
+		'orderby'   => 'name',
+		'order'     => 'ASC',
+		'exclude'   => null,
+		'include'   => null,
+		'link'      => 'view',
+		'taxonomy'  => 'product_tag',
+		'echo'      => true,
+		'topic_count_text_callback' => 'default_topic_count_text',
+	] );
+	echo '</div>';
+	}
+}
+
+add_filter( 'wp_tag_cloud', 'replace_tag_cloud_categories' );
+
+function replace_tag_cloud_categories( $return ) {
+	$return = str_replace('компрессоры', ' ', $return );
+	return $return;
+
 }
 
 add_action( 'woocommerce_after_single_product_summary', 'popular_model', 14);
