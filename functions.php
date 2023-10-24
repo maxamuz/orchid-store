@@ -484,6 +484,14 @@ function replace_tag_cloud_categories( $return ) {
 
 }
 
+add_filter( 'wp_tag_cloud', 'replace_tag_cloud_zapchasty' );
+
+function replace_tag_cloud_zapchasty( $return ) {
+	$return = str_replace('компрессора', ' ', $return );
+	return $return;
+
+}
+
 add_action( 'woocommerce_after_single_product_summary', 'popular_model', 14);
 
 function popular_model () {
@@ -498,4 +506,5 @@ function translate_text($translated) {
     $translated = str_ireplace('Сопутствующие товары', 'Аналоги', $translated);
   return $translated;
 }
+
 

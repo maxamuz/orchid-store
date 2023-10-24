@@ -28,7 +28,7 @@ global $product;
 </div>
 
 <div class="info_guarantee">
-	<a href="https://kompr.ru/warranty/">Гарантия и возврат</a>
+	<a href="https://zif-msk.ru/garantii/">Гарантия и возврат</a>
 </div>
 </div>
 

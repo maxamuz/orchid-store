@@ -19,6 +19,19 @@ defined( 'ABSPATH' ) || exit;
 
 global $product;
 
+ 
+// Определение ID категории товара
+
+$term_lists = wp_get_post_terms($post->ID,'product_cat', array('fields' => 'ids') );
+if( $term_lists ){
+	$term_list = array_shift( $term_lists );
+
+	// теперь можно можно вывести название термина
+	print_r($term_list);
+}
+
+
+
 /**
  * Hook: woocommerce_before_single_product.
  *
@@ -68,9 +81,17 @@ if ( post_password_required() ) {
 			<div class="to_order">
 				<a href="#" class="to_order_buttom">Заказать обслуживание</a>
 			</div>
+			<?php if ($term_list !== 50): ?>
 			<div class="to_spares">
-				<a href="#" class="to_spares_buttom">Подобрать запчасти</a>
+				<a href="<?php if($term_list == 58) { ?>
+					http://zif.loc/product-tag/zapchasry_zif_shv/
+				<?php } ?> <?php if ($term_list == 576 or $term_list == 43) { ?>
+					http://zif.loc/product-tag/zapchasty_zif_sve/
+				<?php }?> <?php if ($term_list == 19) { ?>
+					http://zif.loc/product-tag/zapchasty_zif_pv/
+				<?php }?>" class="to_spares_buttom">Подобрать запчасти</a>
 			</div>
+			<?php endif; ?>
 		</div>
 	</div>
 
@@ -90,3 +111,4 @@ if ( post_password_required() ) {
 </div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
+

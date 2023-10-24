@@ -123,7 +123,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Конец блока с кнопками услуг и запчастей */
 
+/* Блок стилей шорткодов вывода товаров в карточке*/
 
+.products_shorcodes .block-prod-cat {
+    width: 100% !important;
+}
+
+/* Конец блока стилей шорткодов вывода товаров в карточке*/
 
 .woocommerce-products-header {
 	z-index: 0;
@@ -297,7 +303,7 @@ del {
 .price_discount a:hover {
 	color: #e4a083 !important;
 	text-decoration: none;
-	font-size: 19.9px;
+	font-size: 18.9px;
 }
 
 .woocommerce div.product .entry-summary form.cart .button {
