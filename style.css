@@ -130,7 +130,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	margin-bottom: 0 !important;
 }
 
-.products_shorcodes .product {
+.two_products_shorcodes .block-prod-cat {
+    width: 100% !important;
+	margin-bottom: 0 !important;
+}
+
+.two_products_shorcodes .product{
+    flex: 0 0 50% !important;
+	max-width: 50% !important;
+}
+
+.two_products_shorcodes .product {
     margin-bottom: 0 !important;
 }
 /* Конец блока стилей шорткодов вывода товаров в карточке*/
