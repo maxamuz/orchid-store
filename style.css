@@ -127,8 +127,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .products_shorcodes .block-prod-cat {
     width: 100% !important;
+	margin-bottom: 0 !important;
 }
 
+.products_shorcodes .product {
+    margin-bottom: 0 !important;
+}
 /* Конец блока стилей шорткодов вывода товаров в карточке*/
 
 .woocommerce-products-header {

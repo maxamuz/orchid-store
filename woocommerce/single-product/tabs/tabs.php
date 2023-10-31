@@ -55,9 +55,23 @@ if ( ! empty( $product_tabs ) ) : ?>
 	</div>
 
 <div class="block-sert">
-	<?php the_field('sertificate'); ?>
+	<?php //the_field('sertificate'); ?>
 	<!--<p style="font-size: 26px; font-weight:700; line-height:1; margin-bottom:30px;">17 лет являемся официальным дилером</p>
 <img class="alignnone size-medium wp-image-327" src="/wp-content/uploads/2021/10/diploma-225x300.png" alt="" width="225" height="300" /><img class="alignnone size-medium wp-image-327" src="/wp-content/uploads/2021/10/diploma-225x300.png" alt="" width="225" height="300" />-->
+<h2 style="text-align: center;">Почему нам доверяют?</h2>
+<ul class="pad-list">
+ 	<li>Наша компания зарегистрирована в Реестре Минпромторга;</li>
+ 	<li>Мы одни из первых, кто начал работать с компанией ООО "Арсенал Машиностроение";</li>
+ 	<li>Мы одни из первых, кто начал поставлять продукцию ЗИФ по России;</li>
+ 	<li>Мы соблюдаем гарантийные обязательства и оказываем сервисную поддержку;</li>
+ 	<li>Мы проводим пусконаладочные работы и обучаем персонала заказчика;</li>
+ 	<li>Наши  специалисты обучаются на заводе-изготовителе в Санкт-Петербурге;</li>
+ 	<li>У нас самая гибкая ценовая политика и условия поставки.</li>
+</ul>
+<h2 style="text-align: center;">Сертификат:</h2>
+&nbsp;
+<p style="text-align: center;"><a href="http://zif.loc/wp-content/uploads/2021/11/0.jpg"><img class="alignnone wp-image-5640 size-large" src="http://zif.loc/wp-content/uploads/2021/11/0-1024x729.jpg" alt="" width="640" height="456" /></a></p>
+&nbsp;
 </div>	
 </div>
 
